@@ -48,6 +48,8 @@ h1 {
 
 .personal_data { /* centratura div */
     position: absolute;
+    min-width: 90%;
+    overflow: hidden;
     top: 50%;
     left: 7rem;
     transform: translate(0, -50%);
