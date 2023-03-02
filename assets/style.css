@@ -24,6 +24,10 @@ h1 {
     margin-bottom: 3rem;
 }
 
+span {
+    display: block;
+}
+
 .introduction {
     text-align: center;
     font-size: 1.2rem;
@@ -40,6 +44,12 @@ h1 {
     box-shadow: 2px 2px 6px rgb(110, 110, 110);
 }
 
+.card::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
 .card img {
     float: left;
     width: 6rem;
@@ -49,7 +59,6 @@ h1 {
 .personal_data { /* centratura div */
     position: absolute;
     min-width: 90%;
-    overflow: hidden;
     top: 50%;
     left: 7rem;
     transform: translate(0, -50%);
