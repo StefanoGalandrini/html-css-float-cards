@@ -10,8 +10,8 @@ body {
     font-family: 'Fredoka', sans-serif;
 }
 
-main {
-    max-width: 60vw;
+.wrapper {
+    max-width: 1200px;
     margin-inline: auto;
     padding-top: 2rem;
 }
@@ -36,7 +36,6 @@ span {
 }
 
 .card {
-    /* position: relative; */
     background-color: #0f0e17;
     width: calc(100% / 3 - 2rem);
     margin: 0 1rem 3rem;
@@ -44,7 +43,7 @@ span {
     box-shadow: 2px 2px 6px rgb(110, 110, 110);
 }
 
-.card::after {
+.card::after { /* clearfix, probably useless */
     content: "";
     clear: both;
     display: block;
@@ -57,13 +56,9 @@ span {
 }
 
 .personal_data {
-    /* position: absolute;
-    max-width: 50%;
-    top: 50%;
-    left: 7rem;
-    transform: translate(0, -50%); */
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    float: left;
+    margin-top: 0.6rem;
+    margin-bottom: 0.6rem;
 }
 
 
