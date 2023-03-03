@@ -8,12 +8,13 @@
 
 body {
     font-family: 'Fredoka', sans-serif;
-}
-
-.wrapper {
     max-width: 1200px;
     margin-inline: auto;
     padding-top: 2rem;
+}
+
+.wrapper {
+    margin-inline: -1rem; /* per compensare i margini esterni delle cards */
 }
 
 h1 {
@@ -43,7 +44,7 @@ span {
     box-shadow: 2px 2px 6px rgb(110, 110, 110);
 }
 
-.card::after { /* clearfix, probably useless */
+.card::after {
     content: "";
     clear: both;
     display: block;
